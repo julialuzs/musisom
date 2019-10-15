@@ -1,0 +1,12 @@
+.form-control {
+    width: 90% !important;
+}
+
+.form-inline {
+    justify-content: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+}
