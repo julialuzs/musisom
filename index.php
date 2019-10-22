@@ -19,7 +19,7 @@
 
     <div id="container">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <span id="title"> MUSISOM</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,9 +42,41 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
 
+            <?php if (!empty($clientes)) : ?>
+
+                <!-- Tabela de Clientes -->
+                <table class="table table-striped">
+                    <tr class='active'>
+                        <th>Foto</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Status</th>
+                        <th>Ação</th>
+                    </tr>
+                    <?php foreach ($clientes as $cliente) : ?>
+                        <tr>
+                            <td><img src='fotos/<?= $cliente->foto ?>' height='40' width='40'></td>
+                            <td><?= $cliente->nome ?></td>
+                            <td><?= $cliente->email ?></td>
+                            <td><?= $cliente->celular ?></td>
+                            <td><?= $cliente->status ?></td>
+                            <td>
+                                <a href='editar.php?id=<?= $cliente->id ?>' class="btn btn-primary">Editar</a>
+                                <a href='javascript:void(0)' class="btn btn-danger link_exclusao" rel="<?= $cliente->id ?>">Excluir</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+
+            <?php else : ?>
+                <h3 class="text-center text-primary">Não existem clientes cadastrados!</h3>
+            <?php endif; ?>
+
         </div>
 
-    </div> <!--fim container-->
+    </div>
+    <!--fim container-->
 
 </body>
 
