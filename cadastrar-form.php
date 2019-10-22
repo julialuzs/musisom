@@ -14,7 +14,7 @@
 				<div class="row">
 					<label for="nome">Selecionar Foto</label>
 			      	<div class="col-md-2">
-			
+			 
 					<img src="imagens/guitarra.png" id="foto-cliente">
 
 				  	</div>
