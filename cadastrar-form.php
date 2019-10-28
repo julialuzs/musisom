@@ -7,7 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 <body>
+	<header>
+		<?php require_once('navbar.php'); ?>
+	</header>
 	<div class='container'>
+
 		<fieldset>
 			
 			<form action="action_cliente.php" method="post" id='form-contato' enctype='multipart/form-data'>
