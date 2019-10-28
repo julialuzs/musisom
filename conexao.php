@@ -86,7 +86,7 @@ class conexao {
     }
 
     public static function isConectado(){
-        
+       
         if(self::$pdo):
             return true;
         else:

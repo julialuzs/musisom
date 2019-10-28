@@ -10,3 +10,21 @@
     display: flex;
     flex-direction: row;
 }
+
+.button-section {
+    display: flex;
+    justify-content: flex-end;
+}
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.horizontal label {
+    margin-bottom: 0;
+}
+
+.horizontal .form-control {
+    margin: 8px;
+}
