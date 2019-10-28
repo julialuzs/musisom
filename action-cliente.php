@@ -31,13 +31,6 @@
 
 	    // Se for ação diferente de excluir valida os dados obrigatórios
 	    if ($acao != 'excluir'):
-			if ($nome == '' || strlen($nome) < 3):
-				$mensagem .= '<li>Favor preencher o Nome.</li>';
-		    endif;
-
-			if ($status == ''):
-			   $mensagem .= '<li>Favor preencher o Status.</li>';
-			endif;
 			
 			if ($marca == ''):
 			   $mensagem .= '<li>Favor preencher a Marca.</li>';
@@ -51,7 +44,7 @@
 			   $mensagem .= '<li>Favor preencher o Tipo.</li>';
 			endif;
 
-			if ($valor == ''):
+			if ($valor == '' || $valor <= 0):
 				$mensagem .= '<li>Favor fornecer o valor.</li>';
 			endif;
 
@@ -99,7 +92,7 @@
 			          endif;  
 			     endif;  
 			endif;
-
+			
 			$sql = 'INSERT INTO tab_clientes (tipo, marca, descricao, valor, qtd_estoque)
 							   VALUES(:tipo, :marca, :descricao, :valor, :qtd_estoque)';
 
