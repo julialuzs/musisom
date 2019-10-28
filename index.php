@@ -28,16 +28,17 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
 
-            <?php if (!empty($clientes)) : ?>
+            <?php if (!empty($produtos)) : ?>
 
                 <!-- Tabela de Clientes -->
                 <table class="table table-striped">
                     <tr class='active'>
                         <th>Foto</th>
-                        <th>Nome</th>
-                        <th>E-mail</th>
-                        <th>Celular</th>
-                        <th>Status</th>
+                        <th>Descrição</th>
+                        <th>Tipo</th>
+                        <th>Marca</th>
+                        <th>Valor</th>
+                        <th>Quantidade em Estoque</th>
                         <th>Ação</th>
                     </tr>
                     <?php foreach ($clientes as $cliente) : ?>
@@ -56,13 +57,12 @@
                 </table>
 
             <?php else : ?>
-                <h3 class="text-center text-primary">Não existem clientes cadastrados!</h3>
+                <h3 class="text-center text-primary">Não existem instrumentos cadastrados!</h3>
             <?php endif; ?>
 
         </div>
 
     </div>
-    <!--fim container-->
 
 </body>
 

@@ -51,15 +51,15 @@
 					</select>
 					<span class='msg-erro msg-tipo'></span>
 
-					<label for="tipo">Marca</label>
-					<select class="form-control" name="tipo" id="tipo">
-						<option value="">Selecione o Tipo</option>
+					<label for="marca">Marca</label>
+					<select class="form-control" name="marca" id="marca">
+						<option value="">Selecione a Marca(a adicionar)</option>
 						<option value="cordofone">Cordofone</option>
 						<option value="aerofone">Aerofone</option>
 						<option value="idiofone">Idiofone</option>
 						<option value="eletrofone">Eletrofone</option>
 					</select>
-					<span class='msg-erro msg-tipo'></span>
+					<span class='msg-erro msg-marca'></span>
 				</div>
 				
 				<div class="form-group button-section">

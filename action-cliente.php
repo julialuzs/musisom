@@ -92,12 +92,12 @@
 			          endif;  
 			     endif;  
 			endif;
-			
-			$sql = 'INSERT INTO tab_clientes (tipo, marca, descricao, valor, qtd_estoque)
+
+			$sql = 'INSERT INTO produtos (tipo, marca, descricao, valor, qtd_estoque)
 							   VALUES(:tipo, :marca, :descricao, :valor, :qtd_estoque)';
 
 			$stm = $conexao->prepare($sql);
-			$stm->bindValue(':tipo', $nome);
+			$stm->bindValue(':tipo', $tipo);
 			$stm->bindValue(':marca', $marca);
 			$stm->bindValue(':descricao', $descricao);
 			$stm->bindValue(':valor', $valor);
@@ -155,11 +155,11 @@
 
 			endif;
 
-			$sql = 'UPDATE tab_clientes SET tipo=:tipo, marca=:marca, descricao=:descricao, valor=:valor, qtd_estoque=:qtd_estoque ';
+			$sql = 'UPDATE produtos SET tipo=:tipo, marca=:marca, descricao=:descricao, valor=:valor, qtd_estoque=:qtd_estoque ';
 			$sql .= 'WHERE codigo = :codigo';
 
 			$stm = $conexao->prepare($sql);
-			$stm->bindValue(':tipo', $nome);
+			$stm->bindValue(':tipo', $tipo);
 			$stm->bindValue(':marca', $marca);
 			$stm->bindValue(':descricao', $descricao);
 			$stm->bindValue(':valor', $valor);
