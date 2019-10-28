@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Cadastro de Cliente</title>
+	<title>Cadastro de Instrumentos</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 <body>

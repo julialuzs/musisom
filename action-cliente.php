@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-	<title>Sistema de Cadastro</title>
+	<title>Cadastro de Instrumentos</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
@@ -35,52 +35,36 @@
 				$mensagem .= '<li>Favor preencher o Nome.</li>';
 		    endif;
 
-			if ($cpf == ''):
-			   $mensagem .= '<li>Favor preencher o CPF.</li>';
-		    elseif(strlen($cpf) < 11):
-				  $mensagem .= '<li>Formato do CPF inválido.</li>';
-		    endif;
-
-			if ($email == ''):
-				$mensagem .= '<li>Favor preencher o E-mail.</li>';
-			elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)):
-				  $mensagem .= '<li>Formato do E-mail inválido.</li>';
-			endif;
-
-			if ($data_nascimento == ''): 		
-				$mensagem .= '<li>Favor preencher a Data de Nascimento.</li>';
-			else:
-				$data = explode('/', $data_nascimento);
-				if (!checkdate($data[1], $data[0], $data[2])):
-					$mensagem .= '<li>Formato da Data de Nascimento inválido.</li>';
-				endif;
-			endif;
-
-			if ($telefone == ''): 
-				$mensagem .= '<li>Favor preencher o Telefone.</li>';
-			elseif(strlen($telefone) < 10):
-				  $mensagem .= '<li>Formato do Telefone inválido.</li>';
-		    endif;
-
-			if ($celular == ''):
-				$mensagem .= '<li>Favor preencher o Celular.</li>';
-			elseif(strlen($celular) < 11):
-				  $mensagem .= '<li>Formato do Celular inválido.</li>';
-			endif;
-
 			if ($status == ''):
 			   $mensagem .= '<li>Favor preencher o Status.</li>';
 			endif;
+			
+			if ($marca == ''):
+			   $mensagem .= '<li>Favor preencher a Marca.</li>';
+			endif;
 
+			if ($descricao == ''):
+			   $mensagem .= '<li>Favor preencher a Descrição.</li>';
+			endif;
+			
+			if ($tipo == ''):
+			   $mensagem .= '<li>Favor preencher o Tipo.</li>';
+			endif;
+
+			if ($valor == ''):
+				$mensagem .= '<li>Favor fornecer o valor.</li>';
+			endif;
+
+			if ($qtd_estoque == ''):
+				$mensagem .= '<li>Favor fornecer a quantidade em estoque.</li>';
+			endif;
+			
 			if ($mensagem != ''):
 				$mensagem = '<ul>' . $mensagem . '</ul>';
 				echo "<div class='alert alert-danger' role='alert'>".$mensagem."</div> ";
 				exit;
 			endif;
 
-			// Constrói a data no formato ANSI yyyy/mm/dd
-			$data_temp = explode('/', $data_nascimento);
-			$data_ansi = $data_temp[2] . '/' . $data_temp[1] . '/' . $data_temp[0];
 		endif;
 
 
