@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS produtos(
     tipo varchar (70),   
     marca varchar (70),   
     descricao varchar (100),   
-    valor varchar (70)   
+    valor varchar (70),
     qtd_estoque varchar (15),   
     PRIMARY KEY (codigo),   
     KEY codigo
