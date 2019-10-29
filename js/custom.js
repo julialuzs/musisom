@@ -20,12 +20,12 @@ var linkExclusao = document.querySelectorAll(".link_exclusao");
 if (linkExclusao != null) {
 	for (var i = 0; i < linkExclusao.length; i++) {
 		(function (i) {
-			var id_cliente = linkExclusao[i].getAttribute('rel');
+			var codigo_produto = linkExclusao[i].getAttribute('rel');
 
 			if (linkExclusao[i].addEventListener) {
-				linkExclusao[i].addEventListener("click", function () { confirmaExclusao(id_cliente); });
+				linkExclusao[i].addEventListener("click", function () { confirmaExclusao(codigo_produto); });
 			} else if (linkExclusao[i].attachEvent) {
-				linkExclusao[i].attachEvent("onclick", function () { confirmaExclusao(id_cliente); });
+				linkExclusao[i].attachEvent("onclick", function () { confirmaExclusao(codigo_produto); });
 			}
 		})(i);
 	}
@@ -111,13 +111,14 @@ function loadFoto(file, img) {
 
 /* Função para exibir um alert confirmando a exclusão do registro*/
 function confirmaExclusao(id) {
+	debugger
 	retorno = confirm("Deseja excluir esse Registro?")
 
 	if (retorno) {
 
 		//Cria um formulário
 		var formulario = document.createElement("form");
-		formulario.action = "action_cliente.php";
+		formulario.action = "action-produto.php";
 		formulario.method = "post";
 
 		// Cria os inputs e adiciona ao formulário
@@ -130,7 +131,7 @@ function confirmaExclusao(id) {
 		var inputId = document.createElement("input");
 		inputId.type = "hidden";
 		inputId.value = id;
-		inputId.name = "id";
+		inputId.name = "codigo";
 		formulario.appendChild(inputId);
 
 		//Adiciona o formulário ao corpo do documento

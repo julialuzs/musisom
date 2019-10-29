@@ -15,7 +15,7 @@
 
 		<fieldset>
 
-			<form action="action-cliente.php" method="post" id='form-contato' enctype='multipart/form-data'>
+			<form action="action-produto.php" method="post" id='form-contato' enctype='multipart/form-data'>
 				<div class="row">
 					<label for="nome">Selecionar Foto</label>
 					<div class="col-md-2">
@@ -61,7 +61,7 @@
 					</select>
 					<span class='msg-erro msg-marca'></span>
 				</div>
-				
+
 				<div class="form-group button-section">
 					<input type="hidden" name="acao" value="incluir">
 					<button type="submit" class="btn btn-primary" id='botao'>
