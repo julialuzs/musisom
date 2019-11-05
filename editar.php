@@ -32,12 +32,15 @@ endif;
 
 <body>
 	<header>
-		<?php require_once('navbar.php'); ?>
+		<?php
+		require_once('navbar.php');
+		require_once('background.php');
+		?>
 	</header>
 	<div class='container'>
 		<fieldset>
 			<legend>
-				<h1>Formulário - Edição de Produto</h1>
+				<span class="form-title">Editar produto</span>
 			</legend>
 
 			<?php if (empty($produto)) : ?>
@@ -45,13 +48,15 @@ endif;
 			<?php else : ?>
 				<form action="action-produto.php" method="post" id='form-contato' enctype='multipart/form-data'>
 					<div class="row">
-						<label for="nome">Alterar Foto</label>
-						<div class="col-md-2">
+						<div class="thumbnail-area">
+							<label for="nome">Alterar Foto</label>
 							<a href="#" class="thumbnail">
 								<img src="fotos/<?= $produto->foto ?>" height="190" width="150" id="foto-cliente">
 							</a>
 						</div>
-						<input type="file" name="foto" id="foto" value="foto">
+						<div class="input-file-area">
+							<input type="file" name="foto" id="foto" value="foto">
+						</div>
 					</div>
 
 					<div class="form-group">

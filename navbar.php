@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg" style="background-color: #3d2001;">
+<nav class="navbar navbar-expand-lg">
     <span id="title">
         <h1>MUSISOM</h1>
     </span>
@@ -11,7 +11,6 @@
                 <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="cadastrar-form.php"> Cadastrar </a>
             </li>
-
         </ul>
     </div>
 </nav>

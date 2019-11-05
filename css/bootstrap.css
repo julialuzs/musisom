@@ -62,11 +62,6 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
-  background: url(../imagens/papel-de-parede-retro-musical-radios-vitrola-vintage-papel-parede.jpg) center center no-repeat fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -561,8 +556,6 @@ pre code {
   margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
-  background-color:hsla(210, 100%, 48%, 0.87);
-  border: 1px solid black;
 }
 
 @media (min-width: 576px) {

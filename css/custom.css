@@ -33,3 +33,55 @@
 .navbar-nav .nav-item-active a.nav-link {
     color: black !important;
 }
+
+#conteudo .form-inline {
+    padding: 10px;
+}
+
+.background {
+    width: 100%;
+}
+
+#background-image {
+    opacity: 50%;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+}
+
+nav.navbar {
+    background-color: #3d2001;
+}
+
+.container {
+    border-radius: 8px;
+    padding: 20px;
+    background-color:hsla(0, 0%, 100%, 0.753);
+}
+
+.form-group.button-section button, .form-group.button-section a {
+    margin: 5px;
+}
+
+.thumbnail-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.input-file-area {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 30px;
+}
+
+.text-center.text-primary.form-title {
+    background: rgba(255, 255, 255, 0.815);
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -13,21 +13,37 @@
 
 <body>
 	<header>
-		<?php require_once('navbar.php'); ?>
+		<?php
+		require_once('navbar.php');
+		require_once('background.php');
+		?>
 	</header>
 	<div class='container'>
 
 		<fieldset>
+			<legend>
+				<span class="form-title">Cadastrar produto</span>
+			</legend>
 
 			<form action="action-produto.php" method="post" id='form-contato' enctype='multipart/form-data'>
 				<div class="row">
+					<div class="thumbnail-area">
+						<label for="nome">Selecionar Foto</label>
+						<img src="imagens/guitarra.png" height="190" width="200" id="foto-instrumento">
+					</div>
+					<div class="input-file-area">
+						<input type="file" name="foto" id="foto" value="foto">
+					</div>
+				</div>
+
+				<!-- <div class="row">
 					<label for="nome">Selecionar Foto</label>
 					<div class="col-md-2">
 						<img src="imagens/guitarra.png" height="190" width="200" id="foto-instrumento">
 
 					</div>
 					<input type="file" name="foto" id="foto" value="foto">
-				</div>
+				</div> -->
 
 				<div class="form-group">
 					<label for="descricao">Descrição</label>
