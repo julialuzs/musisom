@@ -47,11 +47,11 @@
 			endif;
 
 			if ($valor == '' || $valor <= 0) :
-				$mensagem .= '<li>Favor fornecer o valor.</li>';
+				$mensagem .= '<li>Favor fornecer um valor numerico.</li>';
 			endif;
 
 			if ($qtd_estoque == '') :
-				$mensagem .= '<li>Favor fornecer a quantidade em estoque.</li>';
+				$mensagem .= '<li>Favor fornecer a quantidade em estoque (valor numérico).</li>';
 			endif;
 
 			if ($mensagem != '') :

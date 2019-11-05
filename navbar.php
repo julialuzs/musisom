@@ -10,6 +10,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span></a>
                 <a class="nav-link" href="cadastrar-form.php"> Cadastrar </a>
+                <a class="nav-link" href="relatorio.php"> Relatório </a>
             </li>
         </ul>
     </div>
