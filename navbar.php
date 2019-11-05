@@ -1,5 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <span id="title"> MUSISOM </span>
+<nav class="navbar navbar-expand-lg" style="background-color: #3d2001;">
+    <span id="title">
+        <h1>MUSISOM</h1>
+    </span>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

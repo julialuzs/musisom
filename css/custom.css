@@ -29,3 +29,7 @@
 .horizontal .form-control {
     margin: 8px;
 }
+
+.navbar-nav .nav-item-active a.nav-link {
+    color: black !important;
+}
