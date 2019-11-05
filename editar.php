@@ -51,7 +51,7 @@ endif;
 						<div class="thumbnail-area">
 							<label for="nome">Alterar Foto</label>
 							<a href="#" class="thumbnail">
-								<img src="fotos/<?= $produto->foto ?>" height="190" width="150" id="foto-cliente">
+								<img src="fotos/<?= $produto->foto ?>" id="foto-cliente">
 							</a>
 						</div>
 						<div class="input-file-area">

@@ -36,15 +36,6 @@
 					</div>
 				</div>
 
-				<!-- <div class="row">
-					<label for="nome">Selecionar Foto</label>
-					<div class="col-md-2">
-						<img src="imagens/guitarra.png" height="190" width="200" id="foto-instrumento">
-
-					</div>
-					<input type="file" name="foto" id="foto" value="foto">
-				</div> -->
-
 				<div class="form-group">
 					<label for="descricao">Descrição</label>
 					<input type="text" class="form-control" id="descricao" name="descricao" placeholder="Infome a descrição">
